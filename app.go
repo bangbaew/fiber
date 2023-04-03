@@ -19,6 +19,7 @@ import (
 	"net/http"
 	"net/http/httputil"
 	"reflect"
+	"runtime"
 	"strconv"
 	"strings"
 	"sync"
@@ -124,7 +125,8 @@ type Config struct {
 	// When set to true, this will spawn multiple Go processes listening on the same port.
 	//
 	// Default: false
-	Prefork bool `json:"prefork"`
+	Prefork           bool `json:"prefork"`
+	PreforkChildCount int
 
 	// Enables the "Server: value" HTTP header.
 	//
@@ -526,6 +528,9 @@ func New(config ...Config) *App {
 	}
 
 	// Override default values
+	if app.config.PreforkChildCount == 0 {
+		app.config.PreforkChildCount = runtime.GOMAXPROCS(0)
+	}
 	if app.config.BodyLimit == 0 {
 		app.config.BodyLimit = DefaultBodyLimit
 	}

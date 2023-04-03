@@ -68,7 +68,7 @@ func (app *App) prefork(network, addr string, tlsConfig *tls.Config) error {
 		err error
 	}
 	// create variables
-	max := runtime.GOMAXPROCS(0)
+	max := app.config.PreforkChildCount
 	childs := make(map[int]*exec.Cmd)
 	channel := make(chan child, max)
 

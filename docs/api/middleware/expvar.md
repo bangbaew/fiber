@@ -22,8 +22,8 @@ import (
     "expvar"
     "fmt"
 
-    "github.com/gofiber/fiber/v2"
-    expvarmw "github.com/gofiber/fiber/v2/middleware/expvar"
+    "github.com/bangbaew/fiber/v2"
+    expvarmw "github.com/bangbaew/fiber/v2/middleware/expvar"
 )
 
 var count = expvar.NewInt("count")
@@ -67,7 +67,7 @@ curl 127.0.0.1:3000/debug/vars?r=c
 
 ```go
 // Config defines the config for middleware.
-type Config struct {    
+type Config struct {
     // Next defines a function to skip this middleware when returned true.
     //
     // Optional. Default: nil

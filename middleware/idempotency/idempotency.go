@@ -5,8 +5,8 @@ import (
 	"log"
 	"strings"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/bangbaew/fiber/v2"
+	"github.com/bangbaew/fiber/v2/utils"
 )
 
 // Inspired by https://datatracker.ietf.org/doc/html/draft-ietf-httpapi-idempotency-key-header-02

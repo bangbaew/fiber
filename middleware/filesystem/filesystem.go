@@ -8,8 +8,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/bangbaew/fiber/v2"
+	"github.com/bangbaew/fiber/v2/utils"
 )
 
 // Config defines the config for middleware.

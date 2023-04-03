@@ -13,8 +13,8 @@ func New(config ...Config) fiber.Handler
 First ensure the appropriate packages are imported
 ```go
 import (
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/logger"
+	"github.com/bangbaew/fiber/v2"
+	"github.com/bangbaew/fiber/v2/middleware/logger"
 )
 ```
 
@@ -86,7 +86,7 @@ app.Use(logger.New(logger.Config{
 	TimeZone:   "Asia/Shanghai",
 	Done: func(c *fiber.Ctx, logString []byte) {
 		if c.Response().StatusCode() != fiber.StatusOK {
-			reporter.SendToSlack(logString) 
+			reporter.SendToSlack(logString)
 		}
 	},
 }))

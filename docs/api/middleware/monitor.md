@@ -26,8 +26,8 @@ package main
 import (
     "log"
 
-    "github.com/gofiber/fiber/v2"
-    "github.com/gofiber/fiber/v2/middleware/monitor"
+    "github.com/bangbaew/fiber/v2"
+    "github.com/bangbaew/fiber/v2/middleware/monitor"
 )
 
 func main() {

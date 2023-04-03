@@ -1,7 +1,7 @@
 package earlydata
 
 import (
-	"github.com/gofiber/fiber/v2"
+	"github.com/bangbaew/fiber/v2"
 )
 
 const (

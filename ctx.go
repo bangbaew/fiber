@@ -24,8 +24,8 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/gofiber/fiber/v2/internal/schema"
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/bangbaew/fiber/v2/internal/schema"
+	"github.com/bangbaew/fiber/v2/utils"
 
 	"github.com/savsgio/dictpool"
 	"github.com/valyala/bytebufferpool"

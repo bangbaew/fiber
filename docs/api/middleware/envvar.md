@@ -17,8 +17,8 @@ First import the middleware from Fiber,
 
 ```go
 import (
-  "github.com/gofiber/fiber/v2"
-  "github.com/gofiber/fiber/v2/middleware/envvar"
+  "github.com/bangbaew/fiber/v2"
+  "github.com/bangbaew/fiber/v2/middleware/envvar"
 )
 ```
 

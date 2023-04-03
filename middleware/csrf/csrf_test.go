@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/bangbaew/fiber/v2"
+	"github.com/bangbaew/fiber/v2/utils"
 
 	"github.com/valyala/fasthttp"
 )

@@ -21,8 +21,8 @@ Import the middleware package that is part of the Fiber web framework
 
 ```go
 import (
-  "github.com/gofiber/fiber/v2"
-  "github.com/gofiber/fiber/v2/middleware/favicon"
+  "github.com/bangbaew/fiber/v2"
+  "github.com/bangbaew/fiber/v2/middleware/favicon"
 )
 ```
 
@@ -53,7 +53,7 @@ type Config struct {
     //
     // Optional. Default: ""
     File string
-	
+
     // URL for favicon handler
     //
     // Optional. Default: "/favicon.ico"

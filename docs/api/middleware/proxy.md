@@ -32,8 +32,8 @@ Import the middleware package that is part of the Fiber web framework
 
 ```go
 import (
-    "github.com/gofiber/fiber/v2"
-    "github.com/gofiber/fiber/v2/middleware/proxy"
+    "github.com/bangbaew/fiber/v2"
+    "github.com/bangbaew/fiber/v2/middleware/proxy"
 )
 ```
 
@@ -47,7 +47,7 @@ proxy.WithTlsConfig(&tls.Config{
 })
 // if you need to use global self-custom client, you should use proxy.WithClient.
 proxy.WithClient(&fasthttp.Client{
-    NoDefaultUserAgentHeader: true, 
+    NoDefaultUserAgentHeader: true,
     DisablePathNormalizing:   true,
 })
 
@@ -59,7 +59,7 @@ app.Get("/payments", proxy.DomainForward("docs.gofiber.io", "http://localhost:80
 
 // Forward to url with local custom client
 app.Get("/gif", proxy.Forward("https://i.imgur.com/IWaBepg.gif", &fasthttp.Client{
-    NoDefaultUserAgentHeader: true, 
+    NoDefaultUserAgentHeader: true,
     DisablePathNormalizing:   true,
 }))
 
@@ -165,7 +165,7 @@ type Config struct {
     //
     // Optional. Default: nil
     ModifyResponse fiber.Handler
-    
+
     // Timeout is the request timeout used when calling the proxy client
     //
     // Optional. Default: 1 second
@@ -176,15 +176,15 @@ type Config struct {
     // Increase this buffer if your clients send multi-KB RequestURIs
     // and/or multi-KB headers (for example, BIG cookies).
     ReadBufferSize int
-       
+
     // Per-connection buffer size for responses' writing.
     WriteBufferSize int
 
     // tls config for the http client.
-    TlsConfig *tls.Config 
-    
-    // Client is custom client when client config is complex. 
-    // Note that Servers, Timeout, WriteBufferSize, ReadBufferSize and TlsConfig 
+    TlsConfig *tls.Config
+
+    // Client is custom client when client config is complex.
+    // Note that Servers, Timeout, WriteBufferSize, ReadBufferSize and TlsConfig
     // will not be used if the client are set.
     Client *fasthttp.LBClient
 }

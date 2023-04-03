@@ -6,8 +6,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/bangbaew/fiber/v2"
+	"github.com/bangbaew/fiber/v2/utils"
 )
 
 type SlidingWindow struct{}

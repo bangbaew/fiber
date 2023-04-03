@@ -30,8 +30,8 @@ Import the middleware package that is part of the Fiber web framework
 
 ```go
 import (
-    "github.com/gofiber/fiber/v2"
-    "github.com/gofiber/fiber/v2/middleware/filesystem"
+    "github.com/bangbaew/fiber/v2"
+    "github.com/bangbaew/fiber/v2/middleware/filesystem"
 )
 ```
 
@@ -69,8 +69,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/filesystem"
+	"github.com/bangbaew/fiber/v2"
+	"github.com/bangbaew/fiber/v2/middleware/filesystem"
 )
 
 // Embed a single file
@@ -109,8 +109,8 @@ func main() {
 package main
 
 import (
-    "github.com/gofiber/fiber/v2"
-    "github.com/gofiber/fiber/v2/middleware/filesystem"
+    "github.com/bangbaew/fiber/v2"
+    "github.com/bangbaew/fiber/v2/middleware/filesystem"
 
     "github.com/markbates/pkger"
 )
@@ -134,8 +134,8 @@ func main() {
 package main
 
 import (
-    "github.com/gofiber/fiber/v2"
-    "github.com/gofiber/fiber/v2/middleware/filesystem"
+    "github.com/bangbaew/fiber/v2"
+    "github.com/bangbaew/fiber/v2/middleware/filesystem"
 
     "github.com/gobuffalo/packr/v2"
 )
@@ -159,8 +159,8 @@ func main() {
 package main
 
 import (
-    "github.com/gofiber/fiber/v2"
-    "github.com/gofiber/fiber/v2/middleware/filesystem"
+    "github.com/bangbaew/fiber/v2"
+    "github.com/bangbaew/fiber/v2/middleware/filesystem"
 
     "github.com/GeertJohan/go.rice"
 )
@@ -184,8 +184,8 @@ func main() {
 package main
 
 import (
-    "github.com/gofiber/fiber/v2"
-    "github.com/gofiber/fiber/v2/middleware/filesystem"
+    "github.com/bangbaew/fiber/v2"
+    "github.com/bangbaew/fiber/v2/middleware/filesystem"
 
     "<Your go module>/myEmbeddedFiles"
 )
@@ -209,11 +209,11 @@ func main() {
 package main
 
 import (
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/filesystem"
+	"github.com/bangbaew/fiber/v2"
+	"github.com/bangbaew/fiber/v2/middleware/filesystem"
 
 	// Use blank to invoke init function and register data to statik
-	_ "<Your go module>/statik" 
+	_ "<Your go module>/statik"
 	"github.com/rakyll/statik/fs"
 )
 

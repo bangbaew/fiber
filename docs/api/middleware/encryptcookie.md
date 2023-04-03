@@ -21,8 +21,8 @@ Import the middleware package that is part of the Fiber web framework
 
 ```go
 import (
-  "github.com/gofiber/fiber/v2"
-  "github.com/gofiber/fiber/v2/middleware/encryptcookie"
+  "github.com/bangbaew/fiber/v2"
+  "github.com/bangbaew/fiber/v2/middleware/encryptcookie"
 )
 ```
 
@@ -102,7 +102,7 @@ app.Use(encryptcookie.New(encryptcookie.Config{
 }))
 app.Use(csrf.New(csrf.Config{
 	KeyLookup:      "form:test",
-	CookieName:     "csrf_1", 
+	CookieName:     "csrf_1",
 	CookieHTTPOnly: true,
 }))
 ```

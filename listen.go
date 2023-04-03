@@ -421,8 +421,8 @@ func (app *App) startupMessage(addr string, tls bool, pids string) { //nolint: r
 // printRoutesMessage print all routes with method, path, name and handlers
 // in a format of table, like this:
 // method | path | name      | handlers
-// GET    | /    | routeName | github.com/gofiber/fiber/v2.emptyHandler
-// HEAD   | /    |           | github.com/gofiber/fiber/v2.emptyHandler
+// GET    | /    | routeName | github.com/bangbaew/fiber/v2.emptyHandler
+// HEAD   | /    |           | github.com/bangbaew/fiber/v2.emptyHandler
 func (app *App) printRoutesMessage() {
 	// ignore child processes
 	if IsChild() {

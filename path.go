@@ -13,7 +13,7 @@ import (
 	"time"
 	"unicode"
 
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/bangbaew/fiber/v2/utils"
 	"github.com/google/uuid"
 )
 

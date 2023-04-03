@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/bangbaew/fiber/v2/utils"
 )
 
 var testStore = New()

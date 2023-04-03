@@ -59,7 +59,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/gofiber/fiber/v2"
+	"github.com/bangbaew/fiber/v2"
 )
 
 func main() {
@@ -148,7 +148,7 @@ func (app *App) OnShutdown(handler ...OnShutdownHandler)
 OnMount is a hook to execute user function after mounting process. The mount event is fired when sub-app is mounted on a parent app. The parent app is passed as a parameter. It works for app and group mounting.
 
 ```go title="Signature"
-func (h *Hooks) OnMount(handler ...OnMountHandler) 
+func (h *Hooks) OnMount(handler ...OnMountHandler)
 ```
 
 <Tabs>
@@ -160,7 +160,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/gofiber/fiber/v2"
+	"github.com/bangbaew/fiber/v2"
 )
 
 func main() {
@@ -181,7 +181,7 @@ func main() {
 }
 
 // Result:
-// Mount path of parent app: 
+// Mount path of parent app:
 ```
 
 </TabItem>
